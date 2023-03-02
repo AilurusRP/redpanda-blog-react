@@ -1,4 +1,4 @@
-export function safePush<T>(array: Array<T> | undefined, item: T) {
+export function safePush<T>(array: T[] | undefined, item: T) {
     if (!array) return [item];
     return [...array, item];
 }
