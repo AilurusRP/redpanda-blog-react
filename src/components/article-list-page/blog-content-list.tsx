@@ -1,5 +1,6 @@
 import { Card, CardContent, List, ListItem, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Colors } from "../../constants/colors";
 import { BlogData } from "../../interfaces/blog-data";
 import setOpacity from "../../utils/set-opacity";
 
@@ -21,7 +22,7 @@ export default function BlogContentList(props: ContentListProps) {
                         >
                             <CardContent
                                 sx={{
-                                    backgroundColor: setOpacity("#ffffff", 0.7),
+                                    backgroundColor: setOpacity(Colors.white, 0.7),
                                 }}
                             >
                                 <Typography variant="h4">{item.title}</Typography>

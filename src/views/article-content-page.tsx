@@ -1,5 +1,6 @@
-import { Box, Card, CardContent, Paper, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
+import { Colors } from "../constants/colors";
 import { BlogData } from "../interfaces/blog-data";
 import setOpacity from "../utils/set-opacity";
 
@@ -17,7 +18,7 @@ export default function ArticleContentPage() {
             >
                 <CardContent
                     sx={{
-                        backgroundColor: setOpacity("#ffffff", 0.7),
+                        backgroundColor: setOpacity(Colors.white, 0.7),
                         padding: "50px 60px 0 60px",
                     }}
                 >

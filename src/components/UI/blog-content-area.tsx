@@ -16,7 +16,6 @@ const styles = {
         right: 0,
         width: "80vw",
         height: "calc(100vh - 40px)",
-        // padding: "20px 50px 40px 50px",
         overflowY: "scroll",
     },
 };
