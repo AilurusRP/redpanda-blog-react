@@ -25,7 +25,7 @@ export function BlogTagsListItem(props: TagsListItemProps) {
                         {sublistShow ? (
                             <List sx={styles.innerList}>
                                 {props.value.map(item => (
-                                    <Link to="/article" state={{ article: item }} style={styles.innerListItemLink}>
+                                    <Link to="/article" key={item._id} state={{ article: item }} style={styles.innerListItemLink}>
                                         <ListItemButton sx={styles.innerListItem}>{item.title}</ListItemButton>
                                     </Link>
                                 ))}

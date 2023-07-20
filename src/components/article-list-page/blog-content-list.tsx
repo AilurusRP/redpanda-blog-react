@@ -12,7 +12,7 @@ export default function BlogContentList(props: ContentListProps) {
     return (
         <List sx={{ padding: "15px 60px 10px 60px" }}>
             {props.value.map(item => (
-                <Link to="/article" state={{ article: item }} style={{ textDecoration: "none" }}>
+                <Link to="/article"  key={item._id} state={{ article: item }} style={{ textDecoration: "none" }}>
                     <ListItem sx={{ margin: "40px 0" }}>
                         <Card
                             sx={{

@@ -36,5 +36,5 @@ export default function App() {
 async function getBlogDataList(setBlogDataList: React.Dispatch<React.SetStateAction<BlogData[]>>) {
     const blogDataList = await getAllBlogs();
     console.log(blogDataList);
-    if (blogDataList) setBlogDataList(blogDataList);
+    if (blogDataList) setBlogDataList(blogDataList.reverse());
 }

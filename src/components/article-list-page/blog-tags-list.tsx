@@ -14,7 +14,7 @@ export default function BlogTagsList(props: TagsListProps) {
     return (
         <List sx={styles.tagList}>
             {keys(tagsData).map(key => (
-                <BlogTagsListItem tagName={key} value={tagsData[key]} />
+                <BlogTagsListItem tagName={key} key={key} value={tagsData[key]} />
             ))}
         </List>
     );
